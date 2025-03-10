@@ -1,0 +1,165 @@
+/* Set default margin and padding of all elements to 0 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Set default margin of all h1, h2, h3, h4, h5, and p tags to 0 */
+/* GAVIN: Talk about pointless */
+/* h1, h2, h3, h4, h5, p {
+    margin: 0;
+} */
+
+/* Style the main title's text with a font size of 2.5 rem, centered
+text alignment, and a color of #b63c3c */
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 20px 0;
+    color: #b63c3c;
+}
+
+/* GAVIN: Talk about h2, h3 #b63c3c */
+h2, h3 {
+    color: #b63c3c;
+}
+
+
+/* Set top, bottom margin to 3px, and left, right margin to auto
+Set max width to 800px
+Make the background white
+add rounded corners using radius of 10px
+add box shadow of 0 2px 8px rgba(0,0,0,0.1)
+*/
+section {
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Center all text in about section */
+#about {
+    text-align: center;
+}
+
+/* Add 20 px spacing below the description */
+#description {
+    margin-bottom: 20px;
+}
+
+
+/* Contact, address top, bottom margins should be 10px, left and right margins 
+should be 0 px */
+#contact, #address {
+    margin: 10px 0;
+}
+
+/* All paragraphs directly inside a div in the about section
+should have a fontsize of 1 rem and color #666 */
+#about p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Review box top margin should be 20px */
+/* #reviews unnecessary? */
+.review_box {
+    margin-top: 20px;
+}
+
+/* Review top and bottom margin 15px, left right 0 px */
+/* GAVIN: Talk about additional settings to improve 
+(padding, background-color, border-left 
+*/
+.review {
+    margin: 15px 0;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-left: 5px solid #b63c3c;
+}
+
+/* Reviewer names should be size 0.9rem and color #555
+*/
+.name {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.experience {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* 10px margin above every reviewer explanation */
+.explanation {
+    margin-top: 10px;
+}
+
+
+/* Center all text in menu */
+#menu {
+    text-align: center;
+}
+
+/* Gourmet and comfort items top, bottom margins 15px, left right 0px */
+.comfort_item, .gourmet_item {
+    margin: 15px 0;
+}
+
+
+.dish {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #b63c3c;
+}
+
+.gourmet_item p {
+    margin: 5px 0 15px;
+}
+
+/* Remove all bullet points and left padding */
+/* GAVIN DISCUSS padding: 0 */
+ul {
+    list-style: none;
+    /* padding: 0; */
+}
+
+/* List items should have margin of 5px leftright, right margin 0px.
+but why have ul li? Check if other li's. */
+/* GAVIN ADD TOP BOTTOM MARGIN TO LI's IN UNORDERED LIST */
+li {
+    margin: 5px 0;
+}
+
+
+/* Bold all underlined text in custom burrito options */
+ul u {
+    font-weight: bold;
+}
+
+
+/* First ingredient in each cat italicized and color #777 */
+/* GAVIN TALK ABOUT THIS */
+#menu u + li {
+    font-style: italic;
+    color: #777;
+}
+
+
