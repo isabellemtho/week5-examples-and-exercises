@@ -28,7 +28,22 @@ function App() {
       experience: "Dine in  |  Dinner  |  $1-10",
       explanation: "This is my second time at Brandon’s Burritos and each visit has been better than the last. The service is personalized, the food impeccable, and the water pristine. Without a doubt, the finest dining in all of college park. 100% would recommend anyone passing through takes this incredible opportunity for such a culinary experience."
     },
-  ]
+  ];
+
+  const ingredients = [
+    {
+      label: "Tortilla",
+      options: ["Regular Flour", "Habanero Tortilla"]
+    },
+    {
+      label: "Base",
+      options: ["Cilantro Lime Rice", "Black Beans", "Refried Beans"]
+    },
+    {
+      label: "Protein",
+      options: ["Beef", "Chicken", "Extra Beans", "more (ask about our seafood options)"]
+    },
+  ];
 
   return (
     <>
@@ -65,7 +80,26 @@ function App() {
           <h4 class="dish">Custom Burrito</h4>
           <p>A gourmet burrito made to your requests. Choose any combination of these options: </p>
           <ul>
-            <h1>I'm too lazy to implement this rn :sob:</h1>
+            {/* TODO: Write and use a component that turns the ingredients into
+            the expected output for this section:
+           <u>Tortilla</u>
+          <li>Regular Flour</li>
+          <li>Habanero Tortilla</li>
+          <br>
+
+          <u>Base</u>
+          <li>Cilantro Lime Rice</li>
+          <li>Black Beans</li>
+          <li>Refried Beans</li>
+          <br>
+
+          <u>Protein</u>
+          <li>Beef</li>
+          <li>Chicken</li>
+          <li>Extra Beans</li>
+          <li>more (ask about our seafood options)</li>
+          <br>  
+            */}
           </ul>
         </section>
     </> 
@@ -73,3 +107,4 @@ function App() {
 }
 
 export default App;
+
