@@ -35,3 +35,28 @@ dt1 == dt2
 ...
 
 */
+
+const today = DateTime.now();
+console.log(today.toLocaleString(DateTime.DATE_MED));
+    
+const birth = DateTime.fromObject({
+        year: 2004, 
+        month: 11, 
+        day: 10, 
+        hour: 9, 
+        minute: 45
+});
+console.log(birth.toLocaleString(DateTime.DATETIME_FULL));
+    
+console.log(today > birth);
+    
+const newBirth = birth.plus({
+        year: 1, 
+        month: 2, 
+        day: 3, 
+        hour: 10, 
+});
+console.log(newBirth.toLocaleString(DateTime.DATETIME_FULL));
+    
+const newTime = newBirth.setZone("UTC-9");
+console.log(newTime.toLocaleString(DateTime.DATETIME_FULL));
