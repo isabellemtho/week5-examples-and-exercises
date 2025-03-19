@@ -101,7 +101,7 @@ function App() {
           <li>more (ask about our seafood options)</li>
           <br>  
             */}
-            {ingredients.map(i => <Ingredient info = {i} />)}
+            {ingredients.map(ingredient => <Ingredient label = {ingredient.label} options = {ingredient.options}/>)}
           </ul>
         </section>
     </> 

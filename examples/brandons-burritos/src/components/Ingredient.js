@@ -1,10 +1,9 @@
 const Ingredient = (props) => {
-    const info = props.info;
     return(
         <>
-            <u>{info.label}</u>
-            {info.options.map(
-                s => <li>{s}</li>
+            <u>{props.label}</u>
+            {props.options.map(
+                option => <li>{option}</li>
             )}
             <br />
         </>
